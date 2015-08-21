@@ -1,0 +1,18 @@
+<!-- insert_bottom "[data-hook='admin_product_form_right']" -->
+<div class="alpha two columns">
+  <%= f.field_container :wholesaleable, :class => ['checkbox'] do %>
+    <%= f.label :wholesaleable, t(:wholesaleable, :scope => :wholesale) %>
+    <%= f.check_box :wholesaleable %>
+    <%= f.error_message_on :wholesaleable %>
+  <% end %>
+</div>
+
+<% unless @product.has_variants? %>
+<div class="omega two columns">
+  <%= f.field_container :wholesale_price do %>
+    <%= f.label :wholesale_price, t(:wholesale_price, :scope => :wholesale) %>
+    <%= f.text_field :wholesale_price, :value => number_to_currency(@product.wholesale_price, :unit => '') %>
+    <%= f.error_message_on :wholesale_price %>
+  <% end %>
+</div>
+<% end %>

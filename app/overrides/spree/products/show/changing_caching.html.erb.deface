@@ -1,2 +1,2 @@
-<!-- replace "erb[silent]:contains('cache [I18n.locale, current_currency, @product]')" original "cache [I18n.locale, current_currency, @product] do" -->
+<!-- replace "erb[silent]:contains('cache [I18n.locale, current_currency, @product]')" original "<% cache [I18n.locale, current_currency, @product] do %>" -->
 <% cache [I18n.locale, current_currency, @product, spree_current_user.try(:wholesaler?).to_s] do %>

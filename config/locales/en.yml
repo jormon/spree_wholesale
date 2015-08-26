@@ -5,4 +5,4 @@ en:
   wholesale:
     wholesaleable: "Wholesaleable?"
     wholesale_subscribable: "Wholesale Subscribable?"
-    minimum_required: "For wholesale purchases, your item total must be at least %{minimum_money}."
+    minimum_spend: "For wholesale purchases, your item total must be at least %{minimum_money}."

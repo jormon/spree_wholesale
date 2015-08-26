@@ -1,7 +1,7 @@
 SpreeWholesale
 ==============
 
-Introduction goes here.
+Kuli Kuli's wholesale plugin for Spree. Works in coordination with https://github.com/jormon/spree-subscribe.  Inspired by https://github.com/citrus/spree_wholesale
 
 Installation
 ------------

@@ -1,0 +1,4 @@
+<!-- insert_bottom "h1" -->
+<% if spree_current_user.try(:wholesaler?) %>
+  <small><span class="price-saved">Wholesaler</span></small>
+<% end %>

@@ -1,0 +1,9 @@
+<!-- replace_contents '.price.selling' -->
+<% if spree_current_user.try(:wholesaler?) && @product.wholesaleable? %>
+  <%= Spree::Money.new @product.wholesale_price %>
+  <small>
+    <span class="price-saved">wholesale pricing</span>
+  </small>
+<% else %>
+  <%= display_price(@product) %>
+<% end %>

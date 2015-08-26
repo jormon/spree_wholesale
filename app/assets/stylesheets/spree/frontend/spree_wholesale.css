@@ -2,3 +2,8 @@
 Placeholder manifest file.
 the installer will append this file to the app vendored assets here: 'vendor/assets/stylesheets/spree/frontend/all.css'
 */
+
+h1 small span.price-saved {
+  font-size: 40%;
+  letter-spacing: 0.1em;
+}

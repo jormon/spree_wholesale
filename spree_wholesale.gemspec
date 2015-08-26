@@ -4,11 +4,11 @@ Gem::Specification.new do |s|
   s.name        = 'spree_wholesale'
   s.version     = '0.1'
   s.summary     = 'Kuli Kuli\'s wholesaler gem'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.description = 'Allows retailers to get wholesale subscriptions!'
   s.required_ruby_version = '>= 2.0.0'
 
-  # s.author    = 'You'
-  # s.email     = 'you@example.com'
+  s.author    = 'Jordan Moncharmont'
+  s.email     = 'jordan@kulikulifoods.com'
   # s.homepage  = 'http://www.spreecommerce.com'
 
   #s.files       = `git ls-files`.split("\n")
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.4.10'
+  s.add_dependency 'spree_core', '~> 2.4.0'
 
   s.add_development_dependency 'capybara', '~> 2.4'
   s.add_development_dependency 'coffee-rails'

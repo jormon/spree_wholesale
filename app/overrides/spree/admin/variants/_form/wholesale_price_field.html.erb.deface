@@ -1,0 +1,10 @@
+<!-- insert_after "[data-hook='cost_price']" -->
+<div class="field" data-hook="wholesale_price">
+  <%= f.label :wholesale_price, t('wholesale.wholesale_price') %>
+  <%= f.text_field :wholesale_price, :value => number_to_currency(@variant.wholesale_price, :unit => ''), :class => 'fullwidth' %>
+</div>
+
+<div class="field" data-hook="wholesale_subscription_price">
+  <%= f.label :wholesale_subscription_price, t('wholesale.wholesale_subscription_price') %>
+  <%= f.text_field :wholesale_subscription_price, :value => number_to_currency(@variant.wholesale_subscription_price, :unit => ''), :class => 'fullwidth' %>
+</div>

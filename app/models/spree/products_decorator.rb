@@ -1,7 +1,6 @@
 Spree::Product.class_eval do
-  delegate_belongs_to :master, :wholesale_price, :wholesale_subscription_price,
-                      :wholesale_only
-
+  delegate_belongs_to :master, :wholesale_price, :wholesale_subscription_price
+  
   def self.active_and_wholesale
     t = arel_table
     sql = t[:available_on].lteq(Time.now).and(t[:wholesale_only].eq(true))

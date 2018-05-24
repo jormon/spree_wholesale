@@ -1,0 +1,8 @@
+<!-- insert_after "[data-hook='admin_product_form_promotionable']" -->
+<%= f.field_container :wholesale_only, class: ["checkbox"] do %>
+  <%= f.label :wholesale_only do %>
+    <%= f.check_box :wholesale_only %>
+    <%= t :wholesale_only, scope: :wholesale %>
+  <% end %>
+  <%= f.error_message_on :wholesale_only %>
+<% end %>

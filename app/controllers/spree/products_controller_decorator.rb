@@ -5,7 +5,7 @@ module Spree
       if try_spree_current_user.try(:has_spree_role?, "admin")
         @products = Product.with_deleted
       elsif try_spree_current_user.try(:has_spree_role?, "wholesale")
-        @products = Product.active_and_wholesale
+        @products = Product.active(current_currency)
       else
         # current_currency is unused
         @products = Product.active(current_currency).
